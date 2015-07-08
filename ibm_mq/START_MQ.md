@@ -19,13 +19,13 @@ You may add these to `~/.bash_profile` or the user `mqm`.
 	source ~/.bash_profile
 ```
 
-### Create a new MQ
+### Create a new queue manager
 
 ```bash
 	crtmqm QMA
 ```
 
-### Start and configure MQ
+### Start and configure queue manager
 
 ```bash
 	strmqm QMA
@@ -39,4 +39,18 @@ Type this in the `runmqsc` console:
 
 ```
 	DEFINE QLOCAL (QUEUE1)
+```
+
+### Sample queue command cheatsheet
+
+Queue pusher:
+
+```bash
+	/opt/mqm/samp/bin/amqsput {QUEUE NAME} {QUEUE MANAGER}
+```
+
+Queue listener:
+
+```bash
+	/opt/mqm/samp/bin/amqsget {QUEUE NAME} {QUEUE MANAGER}
 ```
