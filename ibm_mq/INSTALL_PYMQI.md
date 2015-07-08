@@ -4,6 +4,9 @@ Download and install python mqm interface module from source.
 
 ## Prerequisites
 
+- Python development package
+- Java SDK
+
 Download and install python development package for python 2.6.
 The version definitely matters and cannot be used across versions of python.
 
@@ -36,8 +39,9 @@ Install pymqi from source with python 2.6
 
 ## Library path for pymqi
 
-The path containing `.so` shared libraries required by `pymqi` is located at:
+The path containing `.so` shared libraries required by `pymqi` is located at `/opt/mqm/lib64/` for 64-bit environment. Thus, add this to the shared library configuration path:
 
-```
-/opt/mqm/lib64
+```bash
+	ls -1 /opt/mqm/lib64/*.so > /etc/ld.so.conf.d/mqm-libraries.conf
+	sudo ldconfig
 ```
