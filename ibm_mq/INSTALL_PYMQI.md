@@ -33,3 +33,11 @@ Install pymqi from source with python 2.6
 	python2.6 setup.py build client
 	python2.6 setup.py install
 ```
+
+## Library path for pymqi
+
+The path containing `.so` shared libraries required by `pymqi` is located at:
+
+```
+/opt/mqm/lib64
+```
