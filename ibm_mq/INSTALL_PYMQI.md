@@ -45,3 +45,15 @@ The path containing `.so` shared libraries required by `pymqi` is located at `/o
 	ls -1 /opt/mqm/lib64/*.so > /etc/ld.so.conf.d/mqm-libraries.conf
 	sudo ldconfig
 ```
+
+Also, add the shared library path to LD_LIBRARY_PATH variable:
+
+```bash
+    export LD_LIBRARY_PATH=/opt/mqm/lib64/:$LD_LIBRARY_PATH
+```
+
+Or if the variable was empty, just export it explicitly
+
+```bash
+    export LD_LIBRARY_PATH=/opt/mqm/lib64/
+```
