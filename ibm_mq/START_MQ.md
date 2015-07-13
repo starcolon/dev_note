@@ -24,20 +24,20 @@ You may add these to `~/.bash_profile` or the user `mqm`.
 ### Create a new queue manager
 
 ```bash
-	crtmqm QMA
+	crtmqm {QMGR}
 ```
 
 ### Start and configure queue manager for local connectivity
 
 ```bash
-	strmqm QMA
-	runmqsc QMA
+	strmqm {QMGR}
+	runmqsc {QMGR}
 ```
 
 ### Or start a TCP listener along with a queue manager for remote connectivity
 
 ```bash
-	echo "start LISTENER(SYSTEM.DEFAULT.LISTENER.TCP)" | runmqsc QMA
+	echo "start LISTENER(SYSTEM.DEFAULT.LISTENER.TCP)" | runmqsc {QMGR}
 ```
 
 
@@ -49,7 +49,7 @@ You may add these to `~/.bash_profile` or the user `mqm`.
 Type this in the `runmqsc` console:
 
 ```
-	DEFINE QLOCAL (QUEUE1)
+	DEFINE QLOCAL ({Q})
 ```
 
 ### Start a channel (then a TCP listener needs to be started)
@@ -63,11 +63,11 @@ Type this in the `runmqsc` console:
 Queue pusher:
 
 ```bash
-	/opt/mqm/samp/bin/amqsput {QUEUE NAME} {QUEUE MANAGER}
+	/opt/mqm/samp/bin/amqsput {Q} {QMGR}
 ```
 
 Queue listener:
 
 ```bash
-	/opt/mqm/samp/bin/amqsget {QUEUE NAME} {QUEUE MANAGER}
+	/opt/mqm/samp/bin/amqsget {Q} {QMGR}
 ```
