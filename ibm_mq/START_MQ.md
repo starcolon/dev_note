@@ -58,16 +58,29 @@ Type this in the `runmqsc` console:
 	START CHANNEL(SYSTEM.DEF.SVRCONN)
 ```
 
-### Sample queue command cheatsheet
+# Sample queue command cheatsheet
 
-Queue pusher:
+###Queue pusher:
 
 ```bash
 	/opt/mqm/samp/bin/amqsput {Q} {QMGR}
 ```
 
-Queue listener:
+###Queue pusher (client-server)
+
+```bash
+	/opt/mqm/samp/bin/amqsputc {Q} {QMGR}
+```
+
+
+###Queue listener:
 
 ```bash
 	/opt/mqm/samp/bin/amqsget {Q} {QMGR}
+```
+
+###Queue listener (client-server):
+
+```bash
+	/opt/mqm/samp/bin/amqsgetc {Q} {QMGR}
 ```
