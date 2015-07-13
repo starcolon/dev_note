@@ -57,3 +57,13 @@ Or if the variable was empty, just export it explicitly
 ```bash
     export LD_LIBRARY_PATH=/opt/mqm/lib64/
 ```
+
+## MQ server path configuration
+
+Set the MQ server address environment variable:
+
+```bash
+	export MQSERVER="SYSTEM.DEF.SVRCONN/TCP/192.168.1.24(1414)"
+```
+
+
