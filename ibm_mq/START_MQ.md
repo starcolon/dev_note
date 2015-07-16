@@ -10,7 +10,7 @@ You may add these to `~/.bash_profile` or the user `mqm`.
 
 	. /opt/mqm/bin/setmqenv -s
 
-	export MQSERVER=
+	export MQSERVER={CHANNEL}/{PROTOCOL}/{HOSTADDR}({PORT})
 ```
 
 
