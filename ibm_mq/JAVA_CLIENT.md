@@ -11,6 +11,23 @@ Then make sure to source this as the configurations are patched:
 	/opt/mqm/java/bin/setjmsenv
 ```
 
+Also update the CLASS_PATH variable with these:
+
+```bash
+	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/connector.jar:/opt/mqm/java/lib/com.ibm.mq.jmqi.jar:/opt/mqm/java/lib/com.ibm.mq.headers.jar
+
+	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.commonservices.jar
+
+	export CLASSPATH=$CLASSPATH:.
+```
+
+As well as LD_LIBRARY_PATH, with this:
+
+```bash
+	export LD_LIBRARY_PATH=/opt/mqm/lib/
+```
+
+
 ## Handy quick Java utilities
 
 IBMMQ ships with some sample Java utilities for MQ connectivity test. Some can be found hereby as follows:
