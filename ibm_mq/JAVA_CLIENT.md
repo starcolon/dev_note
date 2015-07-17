@@ -24,7 +24,7 @@ Also update the CLASS_PATH variable with these:
 As well as LD_LIBRARY_PATH, with this:
 
 ```bash
-	export LD_LIBRARY_PATH=/opt/mqm/lib/
+	export LD_LIBRARY_PATH=/opt/mqm/lib/:/opt/mqm/lib64/
 ```
 
 
