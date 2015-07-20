@@ -14,15 +14,11 @@ Then make sure to source this as the configurations are patched:
 Also update the CLASS_PATH variable with these:
 
 ```bash
-	export LD_LIBRARY_PATH=/opt/mqm/lib64/
-	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib64/connector.jar
-	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib64/com.ibm.mq.jmqi.jar
-	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib64/com.ibm.mq.headers.jar
-	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib64/com.ibm.mq.commonservices.jar
-	export CLASSPATH=$CLASSPATH:.
-
+	export LD_LIBRARY_PATH=/opt/mqm/lib/
+	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/connector.jar
+	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.jmqi.jar
+	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.headers.jar
 	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.commonservices.jar
-
 	export CLASSPATH=$CLASSPATH:.
 ```
 
