@@ -14,7 +14,6 @@ Then make sure to source this as the configurations are patched:
 Also update the CLASS_PATH variable with these:
 
 ```bash
-	export LD_LIBRARY_PATH=/opt/mqm/lib/
 	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/connector.jar
 	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.jmqi.jar
 	export CLASSPATH=$CLASSPATH:/opt/mqm/java/lib/com.ibm.mq.headers.jar
@@ -33,6 +32,10 @@ Or, for 64-bit environment:
 ```bash
 	export LD_LIBRARY_PATH=/opt/mqm/lib64/
 ```
+
+### NOTE:
+`CLASSPATH` defines directories where the Java classes (.jar,.class) are stored.
+`LD_LIBRARY_PATH` defines directories where the binary library files (.so,.dll,.lib,.a) are located.
 
 
 ## Handy quick Java utilities
