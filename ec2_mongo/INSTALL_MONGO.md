@@ -30,3 +30,15 @@ Reboot the service to take effects
 ```bash
 	$ sudo service mongod restart
 ```
+
+###3) Test a remote connection
+Get the public ip address of the EC2 instance from the AWS web control panel. Then access the mongo service remotely via:
+
+```bash
+	$ mongo 11.22.33.44:27017
+```
+
+Replace the ip address with your EC2 instance public ip address and that's it.
+
+
+
