@@ -25,6 +25,6 @@ Furthermore, the dump file contains:
 	- `select parameter,value from nls_database_parameters where parameter like '%CHARACTERSET’;`
 	- `locale -a`
 	- Edit:` /etc/sysconfig/i18n`, set the UTF-8 locale
- - Start importing the data from the dump file:
+- Start importing the data from the dump file:
  	- `host impdp KMS_LH_OWN/true directory=TRUE_KMS dumpfile=kms.dump content=data_only logfile=import_data.log EXCLUDE=REF_CONSTRAINT tables=group_tab,tb2,tb3,..`
  	- Repeat until all tables are transferred.
