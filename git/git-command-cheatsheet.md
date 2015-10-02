@@ -32,6 +32,13 @@ Pushing is a common action developers often do more or less. Quick hints for pus
 	git push origin my-test-branch
 ```
 
+## Delete remote branch
+
+It's less painful to delete remote Git branch with:
+```bash
+	git push origin --delete {BRANCH}
+```
+
 ## Log & History
 
 Lots of fun stuffs to do with Git log report.
