@@ -10,7 +10,7 @@ However a quick reference for these two commands are:
 
 **Merge**
 ```bash
-	git merge [base]
+	git merge [from]
 ```
 
 **Rebase**
