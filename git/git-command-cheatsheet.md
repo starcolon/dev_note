@@ -39,6 +39,12 @@ It's less painful to delete remote Git branch with:
 	git push origin --delete {BRANCH}
 ```
 
+After having the remote branches deleted, synchronize with the local tree so all origin/XXX disappear from local with:
+```bash
+	git fetch origin --prune
+```
+
+
 ## Log & History
 
 Lots of fun stuffs to do with Git log report.
