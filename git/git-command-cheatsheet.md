@@ -1,7 +1,7 @@
 # GIT cheatsheet
-===============================
-
+------------------------
 All Git command people should be aware of.
+------------------------
 
 ## Merging & Rebasing
 
