@@ -18,6 +18,16 @@ However a quick reference for these two commands are:
 	git rebase [base]
 ```
 
+## Create a local branch from remote branch
+
+Lots of ways are applicable with creating local branch from a remote branch.
+One way to create it and also let it ***tracks the remote branch* is:
+
+```
+	git fetch
+	git branch [localname] origin/[remotename]
+```
+
 ## Push
 
 Pushing is a common action developers often do more or less. Quick hints for pushing techniques are.
