@@ -14,6 +14,25 @@ or
 /etc/mysql/my.cnf 
 ```
 
+To allow only remote access, bind with accessible external IP address.
+This will also need to have ip-tables configured for access grant.
+
+```
+bind-address = 192.168.2.20  # My external IP
+```
+
+To allow only local access, bind with local address.
+
+```
+bind-address = 0.0.0.0
+```
+
+To allow both ways, comment out and don't leave `skip-networking` enabled.
+
+```
+# bind-address = 192.168.2.20 
+```
+
 ## To create a new user for local connection
 
 ```
