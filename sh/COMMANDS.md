@@ -1,4 +1,4 @@
-# Unix Shell commands 
+# Shell tips
 ===================
 
 # ls
@@ -7,6 +7,14 @@
 
 ```
 ls -lrf
+```
+
+# Mount
+
+## View all mounted paths (human readable)
+
+```
+df -aTh
 ```
 
 # netstat
