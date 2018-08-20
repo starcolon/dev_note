@@ -1,15 +1,18 @@
 # Shell tips
 ===================
 
-# ls
+# Show processes in trees of parents and child processes
+
+```
+ps axjf
+```
+
 
 ## List all symlink original paths
 
 ```
 ls -lrf
 ```
-
-# Mount
 
 ## View all mounted paths (human readable)
 
