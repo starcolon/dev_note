@@ -1,7 +1,7 @@
 # Shell tips
 ===================
 
-# Show processes in trees of parents and child processes
+## Show processes in trees of parents and child processes
 
 ```
 ps axjf
