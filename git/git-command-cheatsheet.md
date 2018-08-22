@@ -71,6 +71,12 @@ Lots of fun stuffs to do with Git log report.
 	git log --oneline --deco --simplify-by-decoration
 ```
 
+**Go away merge commits**
+
+```bash
+	git log --no-merges
+```
+
 **Show edit spectrums**
 
 ```bash
