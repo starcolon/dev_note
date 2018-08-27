@@ -33,8 +33,8 @@ Truncate file to zero length
 :> file
 ```
 
-Redirect stdout `1 > file`
-Redirect stderr `2 > file`
-Redirect both `& > file`
-Redirect stderr to stdout `2 > &1`
+- Redirect stdout `1 > file`
+- Redirect stderr `2 > file`
+- Redirect both `& > file`
+- Redirect stderr to stdout `2 > &1`
 
