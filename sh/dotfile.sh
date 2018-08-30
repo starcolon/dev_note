@@ -10,9 +10,9 @@ LRED=$(echo -en '\033[01;31m')
 LGREEN=$(echo -en '\033[01;32m')
 LYELLOW=$(echo -en '\033[01;33m')
 
+# Find all files which contain the specified text pattern
 findtext(){
   # arg1 = 'pattern'
-  # clear
   grep -rnw '.' -e $1 | while read el; do
     fpath="$(echo $el | cut -d: -f 1)"
     mt="$(echo $el | cut -d: -f 3 | cut -c 1-60)"
@@ -21,9 +21,10 @@ findtext(){
   done
 }
 
+# List all filepaths which contain the specified text pattern
 findtextf(){
-  grep -rnw '.' -e $1 | while read el; do
-    fpath="$(echo $el | cut -d: -f 1)"
-    printf "${CYAN}$fpath ${RESET}\n"
-  done
+  echo "${CYAN}"
+  grep -rnw '.' -e $1 | cut -d: -f 1 | sort -u
+  echo "${RESET}"
 }
+
