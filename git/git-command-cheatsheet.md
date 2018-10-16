@@ -2,58 +2,18 @@
 
 All Git command people should be aware of.
 
+## Flatten (squash) commits into one
 
-## Merging & Rebasing
-
-A bit confusing at the first glance for new developers.
-However a quick reference for these two commands are:
-
-**Merge**
 ```bash
-	git merge [from]
+	git checkout <branch_to_squash> # eg feature/abc
+	git rebase -i <base_reference_branch> # eg master
+	
+	# interactive mode editor will open up
+	# then edit, pick the last one and squash the others
+	# save, exit
+	
+	# done
 ```
-
-**Rebase**
-```bash
-	git rebase [base]
-```
-
-## Create a local branch from remote branch
-
-Lots of ways are applicable with creating local branch from a remote branch.
-One way to create it and also let it ***tracks the remote branch* is:
-
-```
-	git fetch
-	git branch [localname] origin/[remotename]
-```
-
-## Push
-
-Pushing is a common action developers often do more or less. Quick hints for pushing techniques are.
-
-**Push a new tag**
-```bash
-	git push --tags
-```
-
-**Push a new local branch**
-```bash
-	git push origin my-test-branch
-```
-
-## Delete remote branch
-
-It's less painful to delete remote Git branch with:
-```bash
-	git push origin --delete {BRANCH}
-```
-
-After having the remote branches deleted, synchronize with the local tree so all origin/XXX disappear from local with:
-```bash
-	git fetch origin --prune
-```
-
 
 ## Log & History
 
