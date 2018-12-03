@@ -7,6 +7,12 @@
 ps axjf
 ```
 
+## Show users with ids
+
+```
+getent passwd
+```
+
 
 ## List all symlink original paths
 
