@@ -1,0 +1,28 @@
+{
+	"__font_face": "the sans mono condensed-",
+	"color_scheme_": "Packages/Theme - Piatto/Piatto Light.tmTheme",
+	"color_scheme__": "Packages/Theme - Elementary/schemes/Mustang-Bianco.tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+	"folder_no_icon": false,
+	"font_face": "tamzen10x20",
+	"font_face__": "inconsolatazi4varl_qu",
+	"font_options":
+	[
+		"subpixl_antialias",
+		"no_italic",
+		"no_bold"
+	],
+	"font_size": 20.0,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": -3,
+	"phoenix_color_blue": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"theme--": "Phoenix Light.sublime-theme",
+	"theme__": "Spacegray Light.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
