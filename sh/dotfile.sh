@@ -10,6 +10,11 @@ LRED=$(echo -en '\033[01;31m')
 LGREEN=$(echo -en '\033[01;32m')
 LYELLOW=$(echo -en '\033[01;33m')
 
+pg(){
+  # Execute a command with paging, colour-enabled
+  "$@" | less -R
+}
+
 # Find all files which contain the specified text pattern
 findtext(){
   # arg1 = 'pattern'
